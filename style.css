@@ -105,7 +105,20 @@ border-radius:25px;
 font-size:15px;
 transition:.3s;
 }
+.search-box{
+    max-width:900px;
+    margin:20px auto;
+    padding:0 20px;
+}
 
+.search-box input{
+    width:100%;
+    padding:15px;
+    border:2px solid #d4a762;
+    border-radius:12px;
+    font-size:16px;
+    box-sizing:border-box;
+}
 .nav-menu a:hover{
 background:#8a5a3b;
 }
