@@ -62,3 +62,24 @@ font-size:36px;
 .hero p{
 margin:8px 0;
 }
+.hero-buttons{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.btn{
+background:#d4a762;
+color:white;
+text-decoration:none;
+padding:12px 22px;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#b8843d;
+}
