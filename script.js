@@ -1,16 +1,16 @@
-alert("JavaScript يعمل");
-
 const searchInput = document.getElementById("searchInput");
 const menuItems = document.querySelectorAll(".menu-item");
 
-if (searchInput) {
-    searchInput.addEventListener("input", function () {
-        const value = this.value.toLowerCase();
+searchInput.addEventListener("keyup", function () {
+    const search = searchInput.value.trim().toLowerCase();
 
-        menuItems.forEach(item => {
-            const text = item.textContent.toLowerCase();
+    menuItems.forEach(item => {
+        const name = item.querySelector("span").textContent.toLowerCase();
 
-            item.style.display = text.includes(value) ? "flex" : "none";
-        });
+        if (name.includes(search)) {
+            item.style.display = "flex";
+        } else {
+            item.style.display = "none";
+        }
     });
-}
+});
