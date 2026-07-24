@@ -1,3 +1,5 @@
+alert("JavaScript يعمل");
+
 const searchInput = document.getElementById("searchInput");
 const menuItems = document.querySelectorAll(".menu-item");
 
@@ -8,11 +10,7 @@ if (searchInput) {
         menuItems.forEach(item => {
             const text = item.textContent.toLowerCase();
 
-            if (text.includes(value)) {
-                item.style.display = "flex";
-            } else {
-                item.style.display = "none";
-            }
+            item.style.display = text.includes(value) ? "flex" : "none";
         });
     });
 }
